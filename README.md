@@ -1,13 +1,15 @@
-# Landing Page Clone - Pinterest
+# Landing Page Clone - SUPERDRY
 
-### Live page - [Here](https://micheal-wooler.com/apps/passwordgen/passwordgen.html). 
+### Live page - [Here](https://micheal-wooler.com/apps/bootstrapstore/index.html). 
 
 ***
 
-Allows user to generate a random password string 1-16 characters long. By default, strings are composed of lower-case letters; the user can choose the password length and toggle the inclusion of upper-case letters, numbers, and symbols.
+A responsive clothing store landing page, built primarily using Bootstrap.
 
 ### Tools/languages used:
 
 <img align="left" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
 <img align="left" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />        
 <img align="left" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+<img align="left" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+          

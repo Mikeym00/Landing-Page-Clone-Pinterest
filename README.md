@@ -1,1 +1,1 @@
-# Landing-page-clone---pinterest
+# Landing Page Clone - Pinterest

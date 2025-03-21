@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Clothing Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+   
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->  
+  
+  <body id="body" class="overflow-x-hidden" style="font-family: neue-haas-grotesk-text, Arial, 'Lucida Grande', 宋体, SimSun, 华文细黑, STXihei, sans-serif; max-width: 2560px; margin-inline: auto; position: relative;">
+
+    <!-- scoll up button -->
+   
+    <div id="backToTop" class="position-fixed rounded d-none justify-content-center align-items-center">
+        <i class="bi bi-arrow-up fs-1" ></i>
+    </div>
+   
+      
+  
+ <!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->  
+<!-- NAV SECTION -->
+
+    <nav class="navbar  navbar-expand-lg flex-column py-0 position-relative">
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->  
+<!-- mobile nav configuration <lg -->
+
+      <div class="container-fluid my-2 align-items-center d-lg-none">
+
+        <div class="d-flex">
+          <button class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand fw-bold" href="#">CLOTHING.CO</a>
+        </div>
+
+        <button class="btn d-lg-none text-end pe-0" type="button"><i class="bi bi-bag fs-3"></i></button>
+
+        <form class="container-fluid d-flex my-2 px-0 d-lg-none" role="search">
+          <input class="form-control py-2 rounded-end-0 border-secondary" type="search" placeholder="Search products" aria-label="Search">
+          <button class="btn btn-outline-success rounded-start-0 text-light bg-secondary border-secondary" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+      </div>
+
+<!-- mobile nav configuration <lg -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->  
+<!-- nav config for lg+ screens -->
+
+      <div class="container-fluid  align-items-center d-none d-lg-block py-2 m-0 border-bottom">
+        <div class="row align-items-center px-4">
+
+          <a class="navbar-brand fw-bold col m-0 p-0 d-inline-block" href="#">CLOTHING.CO</a>
+
+          <form class="d-none d-lg-flex m-0 my-2 p-0 col-5 " style="width: 500px;" role="search">
+            <input class="form-control py-1 rounded-end-0 rounded-start-pill border-end-0 border-secondary bg-light" type="search" placeholder="  Search products" aria-label="Search">
+            <button class="btn rounded-start-0 text-black  border-start-0 border-secondary rounded-end-pill bg-light" type="submit"><i class="bi bi-search pe-2"></i></button>
+          </form>
+
+          <ul class="navbar-nav d-flex flex-row fs-5 col p-0 m-0 justify-content-end">
+            <li class="nav-item p-2 d-none d-lg-block fs-4"><i class="bi bi-person"></i></li>
+            <li class="nav-item p-2 d-none d-lg-block fs-4"><i class="bi bi-suit-heart"></i></li>
+            <li class="nave-item p-2 d-none d-lg-block fs-4"><i class="bi bi-bag"></i></li>
+          </ul>
+
+        </div>
+      </div>
+
+<!-- nav config for lg+ screens -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- MENU THAT APPEARS OFF SCREEN AT SMALLER SCREEN SIZES  -->
+      <div class="container-fluid">
+            
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold " id="offcanvasNavbarLabel">CLOTHING.CO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+      
+                  <form class="d-flex container-fluid px-3 d-lg-none" role="search">
+                    <input class="form-control py-2 rounded-end-0 border-secondary " type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-success rounded-start-0 text-light bg-secondary border-secondary" type="submit"><i class="bi bi-search "></i></button>
+                  </form>
+        
+                  <div class="offcanvas-body pt-2">
+                    
+                    <!-- for >lg screens -->
+                    <ul id="menu" class="navbar-nav  mx-auto  mb-lg-0 fw-bold d-none d-lg-block">
+                      <li class="nav-item d-inline-block">
+                        <a id="mens" class="nav-link  pb-3 px-4 text-dark" href="#"><span class="stroke-link-hover text-dark py-2">Mens</span></a>
+                        
+                      </li><li class="nav-item d-inline-block">
+                        <a id="womens" class="nav-link  pb-3 px-4 text-dark" href="#"><span class="stroke-link-hover text-dark py-2">Womens</span></a>
+            
+                      </li><li class="nav-item d-inline-block">
+                        <a id="outlet" class="nav-link  pb-3 px-4 text-dark" href="#"><span class="stroke-link-hover text-dark py-2">Outlet</span></a>
+                      </li>
+                    </ul>
+                    <!-- for <lg screens -->
+
+                    <ul class="navbar-nav justify-content-center flex-grow-1 mb-lg-0 fw-bold d-lg-none">
+                      <li class="nav-item d-inline-block">
+                        <a class="stroke-link-hover nav-link px-0 me-5 text-dark" href="#">Mens</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="stroke-link-hover nav-link px-0 me-5  text-dark" href="#">Womens</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="stroke-link-hover nav-link  px-0 me-5  text-dark" href="#">Outlet</a>
+                      </li>
+                    </ul>
+
+                    <div class="container-fluid p-0 d-flex flex-column flex-start d-lg-none">
+                      <button type="button" class="btn btn-outline-dark m-0 mb-2 px-2 text-start "><i class="bi bi-person fs-5 me-2"></i>My Account</button>
+                      <button type="button" class="btn btn-outline-dark m-0 mb-2 px-2 text-start "><i class="bi bi-suit-heart fs-5 me-2"></i>Wish List</button>
+                      <button type="button" class="btn btn-outline-dark m-0 mb-2 px-2 text-start "><i class="bi bi-geo-alt fs-5 me-2"></i>Store Locator</button>
+                    </div>
+                  </div>
+                </div>
+      </div>
+<!-- MENU THAT APPEARS OFF SCREEN AT SMALLER SCREEN SIZES  -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- Menu trays that appear on-hover of nav bar items  -->
+
+<div id="hover-menu-1" class="on-hover-menu-1 w-100 bg-white position-absolute top-100 d-none" style="z-index: 999"> 
+  <div class="row mx-auto px-3 pt-3 pb-5" style="max-width: 1200px;">
+    
+    <div class="col p-0">
+      <ul class="on-hover-item nav">
+        <li>Clothing</li>
+        <li><a class="stroke-link-hover" href="">New In</a></li>
+        <li><a class="stroke-link-hover" href="">3 For £50 Cotton T-Shirts*</a></li>
+        <li><a class="stroke-link-hover" href="">Jackets & Coats</a></li>
+        <li><a class="stroke-link-hover" href="">T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Trousers & Cargos</a></li>
+        <li><a class="stroke-link-hover" href="">Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Shorts</a></li>
+        <li><a class="stroke-link-hover" href="">Swimwear</a></li>
+        <li><a class="stroke-link-hover" href="">Polo Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Tops</a></li>
+        <li><a class="stroke-link-hover" href="">Hoodies & Sweatshirts</a></li>
+        <li><a class="stroke-link-hover" href="">Joggers</a></li>
+        <li><a class="stroke-link-hover" href="">Jeans</a></li>
+        <li><a class="stroke-link-hover" href="">Jumpers</a></li>
+        <li><a class="stroke-link-hover" href="">Ski & Snowboard</a></li>
+        <li><a class="stroke-link-hover" href="">Sportswear</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Trending</li>
+        <li><a class="stroke-link-hover" href="">Best Sellers</a></li>
+        <li><a class="stroke-link-hover" href="">Most Wanted</a></li>
+        <li><a class="stroke-link-hover" href="">Merchant Store</a></li>
+        <li><a class="stroke-link-hover" href="">Vintage Athletic Essentials</a></li>
+        <li><a class="stroke-link-hover" href="">Band T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Holiday Shop</a></li>
+        <li><a class="stroke-link-hover" href="">Organic Essentials</a></li>
+  
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Bags & Accessories</li>
+        <li><a class="stroke-link-hover" href="">View All</a></li>
+        <li><a class="stroke-link-hover" href="">Bags & Backpacks</a></li>
+        <li><a class="stroke-link-hover" href="">Hats & Caps</a></li>
+        <li><a class="stroke-link-hover" href="">Underwear</a></li>
+        <li><a class="stroke-link-hover" href="">Socks</a></li>
+        <li><a class="stroke-link-hover" href="">Belts</a></li>
+  
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Footwear</li>
+        <li><a class="stroke-link-hover" href="">View All</a></li>
+        <li><a class="stroke-link-hover" href="">Sliders</a></li>
+        <li><a class="stroke-link-hover" href="">Flip Flops</a></li>
+        <li><a class="stroke-link-hover" href="">Trainers</a></li>
+        <li class="mt-4"><a class="stroke-link-hover " href="">Gift Cards</a></li>
+  
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+
+<div id="hover-menu-2" class="on-hover-menu-2 w-100 bg-white position-absolute top-100 d-none" style="z-index: 999"> 
+  <div class="row mx-auto px-3 pt-3 pb-5" style="max-width: 1200px;">
+    
+    <div class="col p-0">
+      <ul class="on-hover-item nav">
+        <li>Clothing</li>
+        <li><a class="stroke-link-hover" href="">New In</a></li>
+        <li><a class="stroke-link-hover" href="">3 For £50 Cotton T-Shirts*</a></li>
+        <li><a class="stroke-link-hover" href="">Jackets & Coats</a></li>
+        <li><a class="stroke-link-hover" href="">Dresses</a></li>
+        <li><a class="stroke-link-hover" href="">Trousers & Cargos</a></li>
+        <li><a class="stroke-link-hover" href="">T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Tops & Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Vests</a></li>
+        <li><a class="stroke-link-hover" href="">Shorts</a></li>
+        <li><a class="stroke-link-hover" href="">Swimwear</a></li>
+        <li><a class="stroke-link-hover" href="">Skirts</a></li>
+        <li><a class="stroke-link-hover" href="">Hoodies & Sweatshirts</a></li>
+        <li><a class="stroke-link-hover" href="">Jeans</a></li>
+        <li><a class="stroke-link-hover" href="">Joggers</a></li>
+        <li><a class="stroke-link-hover" href="">Jumpers & Cardigans</a></li>
+        <li><a class="stroke-link-hover" href="">Playsuits & Jumpsuits</a></li>
+        <li><a class="stroke-link-hover" href="">Ski & Snowboard</a></li>
+        <li><a class="stroke-link-hover" href="">Sportswear</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Trending</li>
+        <li><a class="stroke-link-hover" href="">Best Sellers</a></li>
+        <li><a class="stroke-link-hover" href="">Most Wanted</a></li>
+        <li><a class="stroke-link-hover" href="">Athletic Essentials</a></li>
+        <li><a class="stroke-link-hover" href="">Band T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Cargo Pants</a></li>
+        <li><a class="stroke-link-hover" href="">Holiday Shop</a></li>
+        <li><a class="stroke-link-hover" href="">Ibiza Whites Collection</a></li>
+        <li><a class="stroke-link-hover" href="">Crochet</a></li>
+        <li><a class="stroke-link-hover" href="">Organic Essentials</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Bags & Accessories</li>
+        <li><a class="stroke-link-hover" href="">View All</a></li>
+        <li><a class="stroke-link-hover" href="">Bags & Backpacks</a></li>
+        <li><a class="stroke-link-hover" href="">Hats & Caps</a></li>
+        <li><a class="stroke-link-hover" href="">Sunglasses</a></li>
+        <li><a class="stroke-link-hover" href="">Socks</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav">
+        <li>Footwear</li>
+        <li><a class="stroke-link-hover" href="">View All</a></li>
+        <li><a class="stroke-link-hover" href="">Sliders</a></li>
+        <li><a class="stroke-link-hover" href="">Flip Flops</a></li>
+        <li><a class="stroke-link-hover" href="">Trainers</a></li>
+        <li class="mt-4"><a class="stroke-link-hover" href="">Gift Cards</a></li>
+  
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<div id="hover-menu-3" class="on-hover-menu-3 w-100 bg-white position-absolute top-100 d-none" style="z-index: 999"> 
+  <div class="row mx-auto px-3 pt-3 pb-5" style="max-width: 1200px;">
+    
+    <div class="col p-0 border-end border-secondary">
+      <ul class="on-hover-item nav">
+        <li>Mens Outlet</li>
+        <li><a class="stroke-link-hover" href="">Best Sellers</a></li>
+        <li><a class="stroke-link-hover" href="">Jackets</a></li>
+        <li><a class="stroke-link-hover" href="">T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Hoodies & Sweatshirts</a></li>
+        <li><a class="stroke-link-hover" href="">Jumpers</a></li>
+        <li><a class="stroke-link-hover" href="">Sport</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <ul class="on-hover-item nav p-0 ms-5 ps-5">
+        <li>Womens Outlet</li>
+        <li><a class="stroke-link-hover" href="">Best Sellers</a></li>
+        <li><a class="stroke-link-hover" href="">Jackets</a></li>
+        <li><a class="stroke-link-hover" href="">Hoodies & Sweatshirts</a></li>
+        <li><a class="stroke-link-hover" href="">T-Shirts</a></li>
+        <li><a class="stroke-link-hover" href="">Jumpers & Cardigans</a></li>
+        <li><a class="stroke-link-hover" href="">Sport</a></li>
+      </ul>
+    </div>
+  
+  
+  </div>
+</div>
+
+<div id="backdrop-1" class=" bg-dark opacity-75 position-absolute top-100 container-fluid d-none" style="z-index: 500; height:150vh">
+</div>
+<div id="backdrop-2" class=" bg-dark opacity-75 position-absolute top-100 container-fluid d-none" style="z-index: 500; height:150vh">
+</div>
+<div id="backdrop-3" class=" bg-dark opacity-75 position-absolute top-100 container-fluid d-none" style="z-index: 500; height:150vh">
+</div>
+
+<!-- Menu trays that appear on-hover of nav bar items  -->
+
+
+
+    </nav>
+
+<!-- NAV SECTION -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- NAV ON-HOVER MENUS -->
+
+
+
+
+
+
+
+
+<!-- NAV ON-HOVER MENUS -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- HERO SECTION -->
+
+<!-- PICTURE HERE! -->
+    <div class="full-page-pane d-flex flex-column px-4 py-5 justify-content-end justify-content-lg-center text-center bg-success" style="background-image: url(images/landscape2.jpg); background-repeat: no-repeat;
+    background-size: cover;">
+    
+      <div class="">
+        <h1 class="fst-italic mb-3 text-white">New Arrivals</h1>
+        <div class="">
+          <div class="row gap-2 mx-auto justify-content-center">
+            <button type="button" class="btn btn-danger btn-lg px-1 fs-6 col" style="max-width: 130px; background-color: #ff1e00;">Shop Men</button>
+            <button type="button" class="btn btn-danger btn-lg px-1 fs-6 col" style="max-width: 130px; background-color: #ff1e00;">Shop Women</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- HERO SECTION -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- mens vs womens SECTION -->
+
+<div class="row m-0">
+  <!-- consider changin min-height values dependent on smalelr screen sizes - higher vh for smaller screens 125, 100, 62.5 -->
+
+  <!-- PICTURE HERE! -->
+  <div class="mvf-pane d-flex bg-info p-0 m-0 col-sm align-items-end" style="background-image: url(images/man2.jpg);background-repeat: no-repeat;
+  background-size: cover">
+    <!-- flex-end pushes items to bottom (on page load item will be brought upwards by sticky bottom) -->
+    <div class="py-4 ps-5 position-sticky bottom-0 mt-auto">
+      <h3>Men's New In</h3>
+      <ul class="d-inline-block list-unstyled">
+        <li>Jackets & Coats</li>
+        <li>Hoodies</li>
+        <li>Shirts</li>
+        <li>T-Shirts</li>
+        <li>Trousers & Cargos</li>
+        <li>Jumpers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PICTURE HERE! -->
+  <div class="mvf-pane d-flex bg-warning p-0 m-0 col-sm align-items-end" style="background-image: url(images/woman2.jpg); background-repeat: no-repeat;
+  background-size: cover;">
+    <!-- flex-end pushes items to bottom (on page load item will be brought upwards by sticky bottom) -->
+    <div class="py-4 ps-5 position-sticky bottom-0 mt-auto">
+      <h3>Women's New In</h3>
+      <ul class="d-inline-block list-unstyled">
+        <li>Jackets & Coats</li>
+        <li>Hoodies</li>
+        <li>Shirts</li>
+        <li>T-Shirts</li>
+        <li>Trousers & Cargos</li>
+        <li>Jumpers</li>
+      </ul>
+    </div>
+</div>
+</div>
+
+
+
+<!-- mens vs womens SECTION -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- advert 1 section -->
+
+  <!-- PICTURE HERE! -->
+  <div id="shirtDeal" class="full-page-pane d-flex flex-column justify-content-center px-4 py-5 mb-5 text-center">
+    
+    <div class="">
+      <h1 class="display-1 fst-italic" style="color: #ff1e00;">3 for £50</h1>
+      <div class="col-lg-6 mx-auto">
+        
+        <p class="organ-tees text-white mb-4">Organic Cotton T-Shirts</p>
+        <div class="row gap-2 mx-auto justify-content-center mb-3">
+          <button type="button" class="btn btn-danger btn-lg px-1 fs-6 col" style="max-width: 130px; background-color: #ff1e00;">Shop Men</button>
+          <button type="button" class="btn btn-danger btn-lg px-1 fs-6 col" style="max-width: 130px; background-color: #ff1e00;">Shop Women</button>
+        </div>
+        <p class="text-white" style="font-size: 12px;">Includes cotton in conversion.T&C's Apply</p>
+      </div>
+    </div>
+
+    <!-- USE PICTURE AS BACKGROUND - CROPPED VERSION FOR SMALLER SCREENS? -->
+  
+  </div>
+
+<!-- advert 1 section -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- footer and  newsletter signup -->
+
+<div>
+  <footer class="p-0 bg-light">
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- newsletter signup -->
+
+    <div class="d-flex flex-column text-center  mx-auto p-4" style="max-width: 800px;">
+      <form>
+        <h5 class="fw-bold fs-1 mt-3">Get 10% off</h5>
+        <p class="">10% off full price items in your first order. Sign up to the newsletter to recieve the latest news of offers & promotions</p>
+        <div class="d-flex w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control text-center" placeholder="example@email.com">
+        </div>
+        <button class="btn btn-primary px-5 py-3 bg-dark text-light fw-bold mt-2 mb-3" type="button">Get 10% off</button>
+      </form>
+      <p class="" style="font-size: 12px;">By providing your contact details you are agreeing to recieve marketing communications from us. For more information see out <a class="text-dark" href="">privacy policy</a>.Full price items only. For full terms and conditions please <a class="text-dark" href="">click here</a>.</p>
+
+    </div>
+
+<!-- newsletter signup --> 
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- FOOTER INFO MENUS -->
+<div class="bg-white">
+    <div class="row py-5 px-3 mx-auto justify-content-between d-none d-md-flex fw-bold" style="max-width: 1200px; ">     <!-- same horizontal padding as nav -->
+      <div class="col ">
+        <h5 class="mb-3 fw-bold footer-title-select">Online Shopping</h5>
+        <ul class="nav flex-column ">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Buy From The Brand </a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Student Discount</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Sitemap</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Delivery</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Black Friday</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Gift Cards</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5 class="mb-3 fw-bold footer-title-select">Customer Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Help & FAQs</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Delivery Information</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Returns Information</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Returns Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5 class="mb-3 fw-bold footer-title-select">The Brand</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">About Us</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Corporate</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Careers</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Brand Protection</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Email Our Press Team</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Sustainability</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5 class="mb-3 fw-bold footer-title-select">Information</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Stores Directory</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Terms & Conditions</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Privacy Policy</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Cookie Consent</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Klarna</a></li>
+          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-dark">Clearpay</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul class="list-unstyled d-flex fs-3">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter-x"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-youtube"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+
+ 
+<!-- FOOTER INFO MENUS -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+<!-- MOBILE FOOTER INFO MENUS - ACCORDION  -->
+    <div class="accordion d-md-none" id="accordionExample">
+
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed fw-bold footer-title-select" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Online Shopping
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse fw-bold" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="nav flex-column ms-3">
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Buy From The Brand </a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Student Discount</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Sitemap</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Delivery</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Black Friday</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Gift Cards</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fw-bold footer-title-select" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Customer Services
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="nav flex-column ms-3">
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Help & FAQs</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Delivery Information</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Returns Information</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Returns Portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fw-bold footer-title-select" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            The Brand
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse fw-bold" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="nav flex-column ms-3">
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">About Us</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Corporate</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Careers</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Brand Protection</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Email Our Press Team</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fw-bold footer-title-select" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Information
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse fw-bold" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul class="nav flex-column ms-3">
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Stores Directory</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Terms & Conditions</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Privacy Policy</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Cookie Consent</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Klarna</a></li>
+              <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-dark">Clearpay</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="list-unstyled d-flex fs-1 my-4">
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter-x"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+<!-- MOBILE FOOTER INFO MENUS - ACCORDION  -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+
+
+
+
+
+    <div class="d-flex justify-content-between p-4 ps-2 m-0 bg-dark text-light ">
+
+      <button id="langToggler" class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLanguages" aria-controls="offcanvasLanguages" aria-label="Toggle navigation">
+        <span  class="fi fi-gb"></span>  <span >ENGLISH</span>
+      </button>
+      
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasLanguages" aria-labelledby="offcanvasLanguagesLabel">
+
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title fw-bold mx-auto" id="offcanvasLanguagesLabel">SELECT YOUR COUNTRY</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body  pt-2">
+            <ul id="langList" class="nav flex-column px-2 ">
+              <li href="" class="lang-Item text-black" data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-be"></span>  <span class="ms-2" >BELGIUM</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-dk"></span>  <span class="ms-2" >DENMARK</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-de"></span>  <span class="ms-2" >GERMANY</span>
+              </li>
+              <li href="" class="lang-Item text-black" data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-gb"></span>  <span class="ms-2" >ENGLISH</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                <span class="fi fi-fr"></span>  <span class="ms-2" >FRANCE</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                  <span class="fi fi-es"></span>  <span class="ms-2" >SPAIN</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-it"></span>  <span class="ms-2" >ITALY</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-nl"></span>  <span class="ms-2" >NETHERLANDS</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-no"></span>  <span class="ms-2" >NORWAY</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-pl"></span>  <span class="ms-2" >POLAND</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-ch"></span>  <span class="ms-2" >SWITZERLAND</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-fi"></span>  <span class="ms-2" >FINLAND</span>
+              </li>
+              <li href="" class="lang-Item text-black " data-bs-dismiss="offcanvas" style="text-decoration: none;">
+                 <span class="fi fi-se"></span>  <span class="ms-2" >SWEDEN</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      <p class="my-auto fw-bold">© CLOTHING.CO 2024</p>
+    </div>
+  </footer>
+</div>
+<!-- footer and  newsletter signup -->
+<!-- ############################################################################################################################### -->
+<!-- ############################################################################################################################### -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/langs.js"></script>
+    <script src="scripts/scroll.js"></script>
+
+
+  </body>
+</html>

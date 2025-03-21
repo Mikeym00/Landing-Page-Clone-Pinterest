@@ -1,0 +1,178 @@
+ 
+/* place hover effects within a large breakpoint media query? */
+@media screen and (min-width: 992px) {
+    .stroke-link-hover{
+    position: relative;
+  }
+
+  .stroke-link-hover:after{
+    transition: all .5s;
+  }
+
+  .stroke-link-hover:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: black;
+    height: 1px;
+  }
+
+  .stroke-link-hover:hover:after {
+    width: 100%;
+  } 
+}
+
+
+/* defualt section  heights  */
+.footer-title-select{
+  font-size: 1.125rem;
+}
+
+.full-page-pane{
+  height: 45vw;
+}
+
+.full-page-pane h1{
+  font-size: 5rem;
+
+}
+
+.mvf-pane{
+  height: 62.5vw;
+}
+/* default typography */
+.mvf-pane h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff1e00;
+  cursor: pointer;
+}
+
+.mvf-pane li{
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.organ-tees{
+  font-size: 2.3rem;
+}
+
+.mvf-pane li:hover{
+  color: lightgray;
+  cursor: pointer;
+}
+
+/* on-hover menus */
+.on-hover-item{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.on-hover-item li{
+  font-weight: bold;
+}
+.on-hover-item li a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  column-gap: 10px;
+  padding-bottom: 0.25rem;
+}
+
+/* misc */
+#shirtDeal{
+    background-image: url("../images/man3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#langList li{
+  border-bottom: 1px solid #eeeeee;
+  padding-block: 1rem;
+  font-size: 0.75rem;
+}
+
+#langList li:hover{
+  background-color: lightgray;
+}
+
+/* Jump back-to-top button*/
+
+#backToTop{
+  z-index: 999;
+  color: white;
+  background-color: #ff1e00; 
+  width:3rem; 
+  height: 3rem;
+  bottom: 6rem;
+  right: 2%;
+}
+
+#backToTop:hover{
+  cursor: pointer;
+}
+
+/* media queries for widths and font sizes  */
+@media screen and (max-width: 820px){
+  .full-page-pane{
+    height: 67vw;
+  }
+
+  .full-page-pane h1{
+    font-size: 4rem;
+  }
+
+  .organ-tees{
+    font-size: 1.8rem;
+  }
+
+  .mvf-pane{
+    height: 100vw;
+  }
+
+  .mvf-pane h3{
+    font-size: 2.2rem;
+  
+  }
+
+  .mvf-pane li{
+    font-size: 1.8rem;
+
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .full-page-pane,
+  .mvf-pane{
+    height: 125vw;
+  }
+
+  .full-page-pane h1{
+    font-size: 2.2rem;
+  }
+
+  .organ-tees{
+    font-size: 1.3rem;
+  }
+
+  .mvf-pane h3{
+    font-size: 2rem;
+  }
+
+  .mvf-pane li{
+    font-size: 1.6rem;
+  }
+  
+  #shirtDeal{
+    background-image: url("../images/man3.5.jpg");
+
+
+  }
+  
+}
+
